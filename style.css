@@ -8,6 +8,7 @@ body {
     background-color: tan;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 .header{
@@ -48,10 +49,16 @@ body {
     width: 100%;
 }
 
+.centered {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
 
 .topic-about {
     border-right: 10px solid white;
     float: left;
+    font-size: 40px;
     height: 300px;
     margin: 20px;
     padding: 50px;
@@ -63,6 +70,7 @@ body {
 .topic-work {
     border-right: 10px solid white;
     float: left;
+    font-size: 40px;
     height: 300px;
     margin: 20px;
     padding: 50px;
@@ -75,6 +83,7 @@ body {
 .topic-contact {
     border-right: 10px solid white;
     float: left;
+    font-size: 40px;
     height: 300px;
     margin: 20px;
     padding: 50px;
@@ -87,18 +96,27 @@ body {
 .content-about {
     float: right;
     height: 300px;
-    margin: 20px;
-    padding: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
     text-align: left;
     width: 60%;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
 }
 
 
 .content-work {
     float: right;
     height: 300px;
-    margin: 20px;
-    padding: 50px;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
     width: 60%;
 }
@@ -106,8 +124,9 @@ body {
 .content-contact {
     float: right;
     height: 300px;
-    margin: 20px;
-    padding: 50px;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
     width: 60%;
 }
+
