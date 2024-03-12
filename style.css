@@ -59,6 +59,13 @@ a:hover , a:active {
     width: 100%;
 }
 
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 90px;
+}
+
 .centered {
     position: relative;
     text-align: center;
