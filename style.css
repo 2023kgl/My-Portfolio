@@ -210,3 +210,140 @@ ul {
     top: 1000px;
     width: 60%;
 }
+
+/* media query for larger screens */
+
+@media screen and (max-width: 992px) {
+    .header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      text-align: center;
+    }
+    .header h1 {
+      width: 100%;
+      text-align: center;
+      margin: 5px
+    }
+    .header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+    .header-img{
+        height: 400px;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin: 5px  
+    }
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+/* on tablets, set columns to only be 50% of the width and not grow *
+
+@media screen and (max-width: 768px){
+
+    .topic-about {
+        flex-direction: row;
+        justify-content: center;
+        display: contents;
+        padding: 10px
+    }
+
+    .content-about {
+        padding: 10px;
+        align-items: right;
+        width: 33.33%;
+        right: 80px;
+        top: 700px;
+        align-items: center;
+
+    }
+    
+    .content-about img {
+        position: absolute;
+        padding: 10px;
+        align-items: center;
+        width: 50%;
+        border: 5px solid white;
+        right: 80px;
+        margin: 20px;
+    }
+
+    .topic-work {
+        float: left;
+        font-size: 40px;
+        height: 550px;
+        margin: 20px;
+        padding: 50px;
+        position: absolute;
+        text-align: center;
+        top: 1000px;
+        width: 25%;
+    }
+    
+    .content-work {
+       display: block;
+        justify-content: center;
+        float: right;
+        height: 300px;
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
+        width: 60%; 
+        top: 1500px;
+    }
+    
+    .big {
+        position: absolute;
+        padding: 10px;
+        width: 80%;
+        border: 5px solid white;
+        right: 40px;
+        top: 2000px;
+    }
+    
+    .img2 {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        border: 5px solid white;
+        position: absolute;
+        top: 900px;
+        right: 550px;
+        top: 2000px;
+    }
+    
+    .img3 {
+        flex-direction: row;
+        justify-content: center;
+        display: contents;
+        padding: 10px;
+        border: 5px solid white;
+        position: absolute;
+        top: 3000px;
+        right: 150px; 
+    }
+    
+    
+    /* contact section*
+    
+    .topic-contact {
+        flex-direction: row;
+        justify-content: center;
+        display: contents;
+        padding: 10px;
+        top: 3500px;
+    }
+      
+    .content-contact {
+        flex-direction: row;
+        justify-content: center;
+        display: contents;
+        padding: 10px;
+        position: absolute;
+    }
+*/
