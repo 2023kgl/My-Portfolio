@@ -8,4 +8,6 @@ Hello, my name is Karina. I am currently enrolled in a coding bootcamp that has 
 
 https://github.com/2023kgl/my-portfolio
 
+https://2023kgl.github.io/my-portfolio/
+
 !![Screenshot of my Portfolio](images/My-Portfolio.png)
