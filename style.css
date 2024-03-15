@@ -216,38 +216,7 @@ ul {
     width: 60%;
 }
 
-
-/* media query for larger screens *
-
-@media screen and (max-width: 1140px) {
-    .header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-      flex-direction: column;
-      text-align: center;
-    }
-    .header h1 {
-      width: 100%;
-      text-align: center;
-      margin: 5px
-    }
-    .header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-    .header-img{
-        height: 400px;
-    }
-    h2 {
-      width: 100%;
-      text-align: center;
-      margin: 5px  
-    }
-}
-
-//* || small ||*/
+/* || small ||*/
 
 @media screen and (max-width: 576px) {
 
