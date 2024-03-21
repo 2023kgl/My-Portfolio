@@ -57,7 +57,6 @@ a:hover , a:active {
     background-image: url("./images/header-img.jpg");
     background-position: center;
     background-size: cover;
-    height: 200px;
     margin-bottom: 25px;
     width: 100%;
 }
@@ -78,126 +77,76 @@ h2 {
 
 .topic {
     align-items: center;
+    border-right: 10px solid white;
     display: flex;
+    flex-direction: column;
     float: left;
-    height: 300px;
+    font-size: 40px;
     justify-content: center;
+    margin: 20px;
     padding: 20px;
+    text-align: center;
     width: 25%;
 }
 
 .content {
     align-items: center;
     display: flex;
-    float: right;
-    height: 300px;
+    flex-direction: column;
+    font-size: 40px;
     justify-content: center;
     margin: 20px;
     padding: 20px;
+    text-align: center;
     width: 70%;
 }
 
 /* about section */
 
-
 .topic-about {
-    align-items: center;
-    border-right: 10px solid white;
-    display: flex;
-    float: left;
-    font-size: 40px;
-    height: 300px;
-    justify-content: center;
-    margin: 20px;
-    padding: 50px;
-    position: absolute; 
-    text-align: center;
-    width: 25%;
+    margin: 200px 20px 200px 20px;
 }
-
+    
 .content-about p{
-    align-items: center;
-    display: flex;
-    float: right;
     font-size: 20px;
-    height: auto;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
     width: 70%;
 }
 
+.img-txt {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 100px 20px 100px 20px;
+}
+
 .content-about img {
-    align-items: center;
     border-radius: 10px;
     border: 2px solid white;
-    display: flex;
     height: 200px;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    top: 350px;
     width: auto;
 }
 
 /* work section */
 
 .topic-work {
-    align-items: center;
-    border-right: 10px solid white;
-    display: flex;
-    float: left;
-    font-size: 40px;
-    height: 550px;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    top: 600px;
-    width: 25%;
+    margin: 200px 20px 200px 20px;
 }
 
-.content-work {
-    align-items: center;
-    display: flex;
-    float: right;
-    font-size: 20px;
-    height: 550px;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    top: 600px;
-    width: 70%;
+.content-work{
+    margin: 100px 20px 100px 20px;
 }
-
 .big {
-    align-items: center;
-    border: 2px solid white;
     padding: 10px;
-    position: absolute;
-    right: 200px;
-    top: 50px;
-    width: 60%;
+    width: 100%;
 }
 
-.content-work:hover {
+.big:hover {
     opacity: .5;
 }
 
 .img2 {
-    border: 2px solid white;
-    height: 160px;
     padding: 10px;
-    position: absolute;
-    right: 550px;
-    top: 900px;
-    width: 25%;
+    width: 100%;
 }
 
 .img2:hover {
@@ -205,37 +154,29 @@ h2 {
 }
 
 .img3 {
-    border: 2px solid white;
-    height: 160px;
     padding: 10px;
-    position: absolute;
-    right: 150px;
-    top: 900px;
-    width: 25%;
+    width: 100%;
 }
 
 .img3:hover {
     opacity: .5;
 }
 
+.spacebetween {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
 
 /* contact section*/
 
 .topic-contact {
-    align-items: center;
-    border-right: 10px solid white;
-    display: flex;
-    float: left;
-    font-size: 40px;
-    height: 300px;
-    justify-content: center;
-    margin-top: 60px;
-    margin: 20px;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    top: 1110px;
-    width: 25%;
+    margin: 300px 20px 100px 20px;
+}
+.content-contact{
+    margin: 60px 20px 100px 20px;
 }
 
 ul {
@@ -243,18 +184,55 @@ ul {
   }
   
 .content-contact {
-    align-items: center;
-    display: flex;
-    float: right;
     font-size: 40px;
-    height: 300px;
-    justify-content: center;
-    margin-top: 60px;
-    margin: 20px;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    top: 1110px;
-    width: 70%;
 }
 
+@media screen and (max-width: 992px) {
+    body , .header {
+        background-color: #FFC0CB;
+    }
+    h2 {
+        color: white;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+    .header nav {
+        background-color: #FF1493;
+        font-size: 16px;
+    }
+
+    .topic {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .content-about img {
+        display: none;
+    }
+
+    .topic-work {
+        margin-top: 350px;
+    }
+    .content-work {
+        margin: 10px;
+    }
+
+    .topic-contact {
+        margin-top: 50px
+    }
+
+    .content-contact {
+        font-size: 16px;
+    }
+}
+  
